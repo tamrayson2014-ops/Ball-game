@@ -16,6 +16,7 @@ function handleKeyPress(e) {
 	}
 	if (e.code === 'ArrowDown') {
 		yPos = yPos - moveSize;
+	}
 	if (xPos < 0) {
 		xPos = 0;
 	}
