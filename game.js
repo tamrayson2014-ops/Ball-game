@@ -27,5 +27,5 @@ function handleKeyPress(e) {
 }
 function refresh() {
 	ball.style.left = xPos + 'px';
-	ball.sytle.top = yPos + 'px';
+	ball.style.top = yPos + 'px';
 }
