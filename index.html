@@ -6,12 +6,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<title>Document</title>
 		<style>
+			body {
+				overflow: hidden;
+			}
 			#ball {
 				background-color: red;
 				border-radius: 50%;
 				width: 20px;
 				height: 20px;
-				position: relative;
+				position: absolute;
+				transition: left 0.1s linear, top 0.1s linear;
 			}
 		</style>
 	</head>
