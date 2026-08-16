@@ -12,16 +12,16 @@ function handleKeyPress(e) {
 		xPos = xPos + moveSize;
 	}
 	if (e.code === 'ArrowUp') {
-		yPos = yPos + moveSize;
+		yPos = yPos - moveSize;
 	}
 	if (e.code === 'ArrowDown') {
-		yPos = yPos - moveSize;
+		yPos = yPos + moveSize;
 	}
 	if (xPos < 0) {
 		xPos = 0;
 	}
 	if (yPos < 0) {
-		yPos =yPos;
+		yPos = 0;
 	refresh();
 	}
 }
