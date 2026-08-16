@@ -5,6 +5,9 @@ let yPos = 0;
 let moveSize = 10;
 
 function handleKeyPress(e) {
+	if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(e.code)) {
+    	e.preventDefault();
+  	}
 	if (e.code === 'ArrowLeft') {
 		xPos = xPos - moveSize;
 	}
