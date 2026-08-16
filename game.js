@@ -1,19 +1,29 @@
 const ball = document.getElementById('ball');
 document.addEventListener('keydown', handleKeyPress);
-let position = 0;
+let xPos = 0;
+let yPos = 0;
+let moveSize = 10;
 
 function handleKeyPress(e) {
 	if (e.code === 'ArrowLeft') {
-		position = position - 10;
+		xPos = xPos - moveSize;
 	}
 	if (e.code === 'ArrowRight') {
-		position = position + 10;
+		xPos = xPos + moveSize;
 	}
-	if (position < 0) {
-		position = 0;
+	if (e.code === 'ArrowUp') {
+		yPos = yPos + moveSize;
 	}
+	if (e.code === 'ArrowDown') {
+		yPos = yPos - moveSize;
+	if (xPos < 0) {
+		xPos = 0;
+	}
+	if (yPos < 0) {
+		yPos =yPos;
 	refresh();
 }
 function refresh() {
-	ball.style.left = position + 'px';
+	ball.style.left = xPos + 'px';
+	ball.sytle.up = yPos + 'px';
 }
