@@ -22,8 +22,8 @@ function handleKeyPress(e) {
 	}
 	if (yPos < 0) {
 		yPos = 0;
-	refresh();
 	}
+	refresh();
 }
 function refresh() {
 	ball.style.left = xPos + 'px';
