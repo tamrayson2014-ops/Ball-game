@@ -23,8 +23,9 @@ function handleKeyPress(e) {
 	if (yPos < 0) {
 		yPos =yPos;
 	refresh();
+	}
 }
 function refresh() {
 	ball.style.left = xPos + 'px';
-	ball.sytle.up = yPos + 'px';
+	ball.sytle.top = yPos + 'px';
 }
